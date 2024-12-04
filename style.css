@@ -1,0 +1,82 @@
+ 
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .night {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      input {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 300px;
+        font-size: 16px;
+      }
+      .box {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .box:hover {
+        background-color: darkgreen;
+      }
+      .night button {
+        background-color: #e0e0e0;
+        color: #121212;
+      }
+      ol {
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+        width: 350px;
+      }
+      ol li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      ol li:hover {
+        text-decoration: line-through;
+      }
+      .night ol li {
+        background-color: #333;
+      }
+      .close {
+        display: none;
+        background: transparent;
+        border: none;
+        color: #ff0000;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+      }
+      ol li:hover .close {
+        display: inline-block;
+      }
+      ol li:hover .close:hover {
+        color: #cc0000;
+      }
